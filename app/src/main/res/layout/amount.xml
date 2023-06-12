@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_amount_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/grey_10"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="56dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/product_amount_diss"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@color/grey_10"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/product_amount"
+            style="@style/SubHeadText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="1"
+            android:textStyle="bold"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/product_amount_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@color/grey_10"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

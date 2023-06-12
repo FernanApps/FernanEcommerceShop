@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="@dimen/_15sdp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:background="@android:color/transparent"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:layout_height="200dp"
+    android:layout_width="280dp">
+
+    <ImageView
+
+        android:id="@+id/offer_image"
+        android:layout_gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/offer_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/offer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:shadowDy="0"
+            android:shadowDx="0"
+            android:shadowRadius="15"
+            android:shadowColor="#FF5722"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/offer_50"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/offer_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/offer_50_desc"
+            android:shadowDy="0"
+            android:shadowDx="0"
+            android:shadowRadius="10"
+            android:shadowColor="#FFFFFF"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/offer_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/offer_code"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_60" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/offer_get_now"
+            android:foreground="?attr/selectableItemBackground"
+            style="@style/RoundedButton"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="0dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="@string/offer_get_now" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

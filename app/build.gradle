@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id "androidx.navigation.safeargs.kotlin"
+
+}
+
+android {
+    compileSdk 33
+
+    ext.versionEnd = "0.1.2"
+
+    defaultConfig {
+        applicationId "pe.fernanapps.shop"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName versionEnd
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(path: ':MyWidgets')
+    implementation project(path: ':domain')
+    api project(path: ':data')
+
+
+//    implementation 'com.github.AndreyTurcevich:ShapeView:0.1.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+
+    // Fragment
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    // Activity
+    implementation "androidx.activity:activity-ktx:$activity_version"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    implementation 'androidx.lifecycle:lifecycle-service:2.6.1'
+    
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    // DI
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+
+    // CreditCardView
+    implementation "com.github.KunikaValecha:CreditCardView:1.0"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+}
+
+
+task getVersionName  {
+    doLast {
+        println "$project.android.defaultConfig.versionName"
+
+    }
+}
+task getApplicationId  {
+    doLast {
+        println "$project.android.defaultConfig.applicationId"
+
+    }
+}
+
+task getVersionPure  {
+    doLast {
+        println "$project.android.versionEnd"
+    }
+}

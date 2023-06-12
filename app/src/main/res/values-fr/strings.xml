@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- En-têtes -->
+    <string name="headings_one">20% de réduction\nNouveau produit arrivé</string>
+    <string name="headings_two">Profitez de\nl\'offre de shopping</string>
+    <string name="headings_three">Tous les types d\'offres\nà portée de main</string>
+
+    <!-- Description -->
+    <string name="desc_one">Publiez vos selfies pour vous rendre\nplus beau/belle avec cette application.</string>
+    <string name="desc_two">Publiez vos selfies pour vous rendre\nplus beau/belle avec cette application.</string>
+    <string name="desc_three">Publiez vos selfies pour vous rendre\nplus beau/belle avec cette application.</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+    <string name="skip">Passer</string>
+    <string name="login">Connexion</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="create_an_new_account">Créer un nouveau compte</string>
+    <string name="user_name">Nom d\'utilisateur</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="user_name_example">@string/profile_name</string>
+    <string name="check_agree"><![CDATA[En créant un compte, vous acceptez nos conditions d\'utilisation et nos conditions générales.]]></string>
+    <string name="start_shopping">Commencer les achats</string>
+    <string name="continue_shopping">Continuer les achats</string>
+
+    <string name="successful_desc">Vous vous êtes inscrit(e) avec succès sur notre application et pouvez commencer à l\'utiliser.</string>
+    <string name="welcome">Bienvenue,</string>
+    <string name="login_decs">Veuillez vous connecter ou vous inscrire pour continuer à utiliser notre application.</string>
+    <string name="login_with_fb">Continuer avec Facebook</string>
+    <string name="login_with_google">Continuer avec Google</string>
+
+    <string name="login__title"></string>
+    <string name="login__email_hint">Email</string>
+    <string name="login__password_hint">Mot de passe</string>
+    <string name="login__login_button">Mot de passe</string>
+    <string name="login__signup_button">Créer un compte</string>
+
+    <string name="login__error_user_no_registered">Aucun utilisateur enregistré avec cet email</string>
+    <string name="login__error_wrong_password">Mot de passe incorrect</string>
+    <string name="login__error_unknown_error">Une erreur s\'est produite, veuillez réessayer ultérieurement</string>
+    <string name="login__error_enter_email">Veuillez saisir votre email.</string>
+    <string name="login__error_enter_password">Veuillez saisir votre mot de passe.</string>
+
+    <string name="signup__header">Créer un compte</string>
+    <string name="signup__email_hint">Email</string>
+    <string name="signup__password_hint">Mot de passe</string>
+    <string name="signup__conf_password">Confirmez votre mot de passe</string>
+    <string name="signup__signup_button">S\'inscrire</string>
+    <string name="signup__signup_successfully">Compte créé avec succès</string>
+    <string name="signup__error_password_insecure">Votre mot de passe doit comporter au moins 6 caractères</string>
+    <string name="signup__error_passwords_match">Les mots de passe ne correspondent pas</string>
+    <string name="signup__error_email_already_registered">Un compte est déjà enregistré avec cet email</string>
+    <string name="signup__error_unknown_error">Une erreur s\'est produite, veuillez réessayer ultérieurement</string>
+
+    <string name="auth_error__user_not_exist">L\'utilisateur n\'existe pas</string>
+    <string name="auth_error__invalid_credentials">Email ou mot de passe incorrect</string>
+    <string name="auth_error__user_collision">Cet email est déjà utilisé par un autre compte</string>
+    <string name="auth_error__weak_password">Le mot de passe est trop faible</string>
+    <string name="auth_error__recent_login_required">Vous devez vous reconnecter pour effectuer cette action</string>
+    <string name="auth_error__action_code">Code d\'action non valide</string>
+    <string name="need_terms_conds">Vous devez accepter les conditions générales</string>
+
+    <string name="navigation_page_title_home">Accueil</string>
+    <string name="navigation_page_title_cart">Panier</string>
+    <string name="navigation_page_title_notification">Notifications</string>
+    <string name="navigation_page_title_profile">Profil</string>
+    <string name="navigation_page_title_categories">Catégories</string>
+    <string name="navigation_page_title_settings">Paramètres</string>
+    <string name="navigation_page_title_favorites">Favoris</string>
+    <string name="navigation_page_title_personal_details">Détails personnels</string>
+    <string name="navigation_page_title_orders">@string/profile_personal_my_order</string>
+    <string name="navigation_page_title_orders_items">Commande : Articles</string>
+    <string name="navigation_page_title_products">Produits</string>
+    <string name="navigation_page_title_payment">Paiement</string>
+
+    <string name="menu_user">Utilisateur</string>
+    <string name="menu_filtered">Filtrer</string>
+
+    <string name="welcome_desc">Notre application Fernan Shop</string>
+    <string name="search">Recherche ...</string>
+    <string name="offer_50">50% de réduction</string>
+    <string name="offer_50_desc">Sur tout</string>
+    <string name="offer_code">Avec le code : fx2023</string>
+    <string name="offer_get_now">Obtenir maintenant</string>
+    <string name="categorie_size_product">208 produits</string>
+    <string name="categorie_title">Nouveautés</string>
+    <string name="new_arrivals">Nouveautés</string>
+    <string name="view_all">Voir tout</string>
+    <string name="product_title">The Marc Jacobs, The Marc Jacobs</string>
+    <string name="product_subtitle">Traveler Tote, Obtenez un peu de hauteur avec ces sandales Sam Edelman dotées de brides froncées et de lacets en cuir</string>
+    <string name="product_price">195,00 $</string>
+    <string name="menu_cart">Votre panier</string>
+    <string name="product_review">(320 avis)</string>
+    <string name="product_size">Taille</string>
+    <string name="product_size_example">XXL</string>
+    <string name="product_description">Description</string>
+    <string name="product_description_text">Obtenez un peu de hauteur avec ces sandales Sam Edelman dotées de brides froncées et de lacets en cuir, tandis qu\'une semelle en jute tressée apporte une touche de fraîcheur pour l\'été.</string>
+    <string name="product_price_title">Prix total</string>
+    <string name="product_price_value">192,00 $</string>
+
+    <string name="add_to_cart">Ajouter au panier</string>
+    <string name="added_product_to_cart">Produit ajouté</string>
+    <string name="my_cart">Mon panier</string>
+    <string name="you_dont_have_any_product">"Vous n\'avez aucun produit "</string>
+    <string name="you_dont_have_any_order">"Vous n\'avez aucune commande "</string>
+    <string name="you_dont_have_any_notification">"Vous n\'avez aucune notification "</string>
+
+
+    <string name="profile_personal_details">Détails personnels</string>
+    <string name="profile_personal_my_order">Mes commandes</string>
+    <string name="profile_personal_my_favourites">Mes favoris</string>
+    <string name="profile_personal_shipping_address">Adresse de livraison</string>
+    <string name="profile_personal_my_card">Ma carte</string>
+    <string name="profile_personal_settings">Paramètres</string>
+
+    <string name="profile_personal_contact_support">Contacter le support</string>
+    <string name="profile_personal_faqs">FAQ</string>
+    <string name="profile_personal_privacy_policy">Politique de confidentialité</string>
+
+    <string name="name">Nom</string>
+    <string name="age">Âge</string>
+    <string name="phone">Téléphone</string>
+
+    <string name="city">Ville</string>
+    <string name="country">Pays</string>
+    <string name="line1">Ligne 1</string>
+    <string name="line2">Ligne 2</string>
+    <string name="postal_code">Code postal</string>
+    <string name="state">État</string>
+
+
+    <string name="profile_age">26</string>
+    <string name="profile_phone">987654321</string>
+    <string name="profile_address_city">San Francisco</string>
+    <string name="profile_address_country">États-Unis</string>
+    <string name="profile_address_line1">123 Market St</string>
+    <string name="profile_address_line2">#345</string>
+    <string name="profile_address_postal_code">94107</string>
+    <string name="profile_address_state">CA</string>
+
+
+    <string name="settings_language">Langue</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_dark_mode">Mode sombre</string>
+    <string name="settings_help_center">Centre d\'aide</string>
+    <string name="log_out">Se déconnecter</string>
+    <string name="loading">Chargement...</string>
+
+    <string name="one_moment_verifying">Un instant,\nVérification en cours...</string>
+    <string name="one_moment_coming_out">Un instant,\nEn train de sortir...</string>
+    <string name="one_moment_logging_in">Un instant,\nConnexion en cours...</string>
+    <string name="one_moment_sign_up">Un instant,\nInscription en cours...</string>
+    <string name="one_moment_payment_initiated">Un instant,\nLa transaction a été initiée...</string>
+    <string name="one_moment_payment_progress">Transaction en cours...</string>
+    <string name="one_moment_payment_successfully">La transaction a été effectuée avec succès</string>
+    <string name="one_moment_payment_failure">Échec de la transaction</string>
+
+    <string name="one_moment_saving_user">Un instant,\nEnregistrement de l\'utilisateur en cours...</string>
+    <string name="one_moment_saving_card">Un instant,\nEnregistrement de la carte en cours...</string>
+
+    <string name="loading_your_cards">Chargement de vos cartes...</string>
+    <string name="not_cards">Vous n\'avez pas encore de cartes, veuillez en ajouter</string>
+
+    <string name="there_was_a_mistake">Il y a eu une erreur</string>
+    <string name="saved_successfully">Enregistré avec succès</string>
+
+    <string name="one_moment_order_failure">Échec de la commande</string>
+    <string name="one_moment_order_success">Commande : Réussite</string>
+    <string name="one_moment_order_generating">Commande : Génération en cours</string>
+
+    <string name="finish">Terminer</string>
+
+
+    <string name="products">Produits</string>
+    <string name="total_item">Total (%s article)</string>
+    <string name="proceed_to_checkout">Passer à la caisse</string>
+    <string name="contact_to_buy">Contactez-nous pour acheter</string>
+    <string name="_continue">Continuer</string>
+
+    <string name="payment">Paiement</string>
+    <string name="enter_promotion_code">Entrer le code de promotion</string>
+    <string name="billing_address">ADRESSE DE FACTURATION</string>
+    <string name="config_address">Configurer l\'adresse</string>
+    <string name="profile_address">CA, San Francisco, États-Unis\n123 Market St, #345\n+519876543231</string>
+
+    <string name="save">Enregistrer</string>
+    <string name="ongoing">En cours</string>
+    <string name="completed">Terminé</string>
+    <string name="format_quantity">Quantité : %s</string>
+    <string name="format_size">Taille : %s</string>
+    <string name="amount">Montant :</string>
+    <string name="order_date">Date de commande :</string>
+    <string name="delivery">Livraison :</string>
+    <string name="order_no">Numéro de commande :</string>
+    <string name="send">Envoyer</string>
+    <string name="notification_title">Kristine Jones Il est établi de longue date\nqu\'un lecteur sera distrait par le\ncontenu lisible d\'une page.</string>
+    <string name="notification_time">Il y a 2 heures</string>
+    <string name="add_card">Ajouter une carte</string>
+
+    <string name="card_number">Numéro de carte</string>
+    <string name="card_details">Détails de la carte</string>
+    <string name="card_exp_date">Date d\'expiration</string>
+    <string name="card_cvc">CVV</string>
+    <string name="confirm">Confirmer</string>
+    <string name="cancel">Annuler</string>
+    <string name="total_price">Prix total</string>
+
+</resources>

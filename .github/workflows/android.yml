@@ -1,0 +1,60 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout private tools
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.ATOKEN }}
+
+    - name: set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Build with Gradle
+      run: ./gradlew build
+
+    - name: Get Version App
+      id: variable_app
+      run: |
+        versionName=$(./gradlew -q getVersionName | tail -n 1)
+        echo -e "Version Name is $versionName"
+        echo "versionName=$versionName" >> $GITHUB_OUTPUT
+
+        # VersionPure -> 0.1.6
+        versionPure=$(./gradlew -q getVersionPure | tail -n 1)
+        echo -e "Version Pure is $versionPure"
+        echo "versionPure=$versionPure" >> $GITHUB_OUTPUT
+
+        # getApplicationId
+        applicationId=$(./gradlew -q getApplicationId | tail -n 1)
+        echo -e "applicationId is applicationId"
+        echo "applicationId=$applicationId" >> $GITHUB_OUTPUT
+
+    - name: Generate Debug Apk 
+      run: ./gradlew app:assemble
+ 
+    - name: Create pre-release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.ATOKEN }}"
+        automatic_release_tag: ${{ steps.variable_app.outputs.versionPure }}
+        prerelease: true
+        title : ${{ steps.variable_app.outputs.versionName }}
+        files: |
+          app/build/outputs/apk/debug/*.apk

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_page_home">
+
+
+    <fragment
+        android:id="@+id/navigation_page_home"
+        android:name="pe.fernanapps.shop.ui.main.home.HomeFragment"
+        android:label="@string/navigation_page_title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_page_home_to_navigation_page_categories"
+            app:destination="@id/navigation_page_categories" />
+        <action
+            android:id="@+id/action_navigation_page_home_to_navigation_page_products"
+            app:destination="@id/navigation_page_products" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_page_cart"
+        android:name="pe.fernanapps.shop.ui.main.cart.CartFragment"
+        android:label="@string/navigation_page_title_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_navigation_page_cart_to_navigation_page_orders"
+            app:destination="@id/navigation_page_orders" />
+        <action
+            android:id="@+id/action_navigation_page_cart_to_navigation_page_payment"
+            app:destination="@id/navigation_page_payment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_page_notification"
+        android:name="pe.fernanapps.shop.ui.main.notifications.NotificationsFragment"
+        android:label="@string/navigation_page_title_notification"
+        tools:layout="@layout/fragment_base" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_page_profile"
+        android:name="pe.fernanapps.shop.ui.main.profile.ProfileFragment"
+        android:label="@string/navigation_page_title_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_page_profile_to_navigation_page_settings"
+            app:destination="@id/navigation_page_settings" />
+        <action
+            android:id="@+id/action_navigation_page_profile_to_navigation_page_favorites"
+            app:destination="@id/navigation_page_favorites" />
+        <action
+            android:id="@+id/action_navigation_page_profile_to_navigation_page_personal_details"
+            app:destination="@id/navigation_page_personal_details" />
+        <action
+            android:id="@+id/action_navigation_page_profile_to_navigation_page_orders"
+            app:destination="@id/navigation_page_orders" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_categories"
+        android:name="pe.fernanapps.shop.ui.main.categories.CategoriesFragment"
+        android:label="@string/navigation_page_title_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_navigation_page_categories_to_navigation_page_home"
+            app:destination="@id/navigation_page_home" />
+        <action
+            android:id="@+id/action_navigation_page_categories_to_navigation_page_products"
+            app:destination="@id/navigation_page_products" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_settings"
+        android:name="pe.fernanapps.shop.ui.main.settings.SettingsFragment"
+        android:label="@string/navigation_page_title_settings"
+        tools:layout="@layout/fragment_settings" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_products"
+        android:name="pe.fernanapps.shop.ui.main.products.ProductsFragment"
+        android:label="@string/navigation_page_title_products"
+        tools:layout="@layout/fragment_products" >
+
+        <action
+            android:id="@+id/action_navigation_page_products_to_navigation_page_home"
+            app:destination="@id/navigation_page_home" />
+
+        <argument
+            android:name="argTitle"
+            app:argType="string"
+            android:defaultValue="Products" />
+
+        <argument
+            android:name="argCategoryId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_page_favorites"
+        android:name="pe.fernanapps.shop.ui.favorite.FavoriteFragment"
+        android:label="@string/navigation_page_title_favorites"
+        tools:layout="@layout/fragment_products" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_personal_details"
+        android:name="pe.fernanapps.shop.ui.main.personal_details.PersonalDetailsFragment"
+        android:label="@string/navigation_page_title_personal_details"
+        tools:layout="@layout/fragment_personal_details" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_orders"
+        android:name="pe.fernanapps.shop.ui.main.orders.OrdersFragment"
+        android:label="@string/navigation_page_title_orders"
+        tools:layout="@layout/fragment_orders" >
+
+        <action
+            android:id="@+id/action_navigation_page_orders_to_navigation_page_orders_items"
+            app:destination="@id/navigation_page_orders_items" />
+
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_orders_items"
+        android:name="pe.fernanapps.shop.ui.main.orders.items.OrderItemsFragment"
+        android:label="@string/navigation_page_title_orders_items"
+        tools:layout="@layout/fragment_orders" >
+        <argument
+            android:name="argOrder"
+            app:argType="pe.fernanapps.shop.domain.model.order.OrderDetails"
+            app:nullable="false"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_payment"
+        android:name="pe.fernanapps.shop.ui.payment.PaymentFragment"
+        android:label="@string/navigation_page_title_payment"
+        tools:layout="@layout/fragment_payment" >
+        <argument
+            android:name="price_total"
+            app:argType="float"
+            android:defaultValue="0"
+            />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_page_payment_card"
+        android:name="pe.fernanapps.shop.ui.payment.card.CardFragment"
+        android:label="@string/navigation_page_title_payment"
+        tools:layout="@layout/fragment_payment_card" >
+
+    </fragment>
+
+
+</navigation>

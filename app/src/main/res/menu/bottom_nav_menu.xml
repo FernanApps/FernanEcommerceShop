@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_page_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/navigation_page_title_home" />
+    <item
+        android:id="@+id/navigation_page_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/navigation_page_title_cart" />
+    <item
+        android:id="@+id/navigation_page_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/navigation_page_title_notification" />
+    <item
+        android:id="@+id/navigation_page_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/navigation_page_title_profile" />
+
+</menu>

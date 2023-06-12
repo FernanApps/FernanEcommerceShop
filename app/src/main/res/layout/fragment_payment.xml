@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PaddingFragmentWithoutActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.payment.PaymentFragment">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_round_white"
+        android:backgroundTint="@color/black"
+        android:padding="11dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_arrow_back2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_general"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/navigation_page_title_payment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+
+    <com.github.credit_card_view.CreditCardView
+        android:id="@+id/creditCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:visibility="gone"
+        app:card_autoFocusCardNumber="true"
+        app:card_backGradientEnd="#626262"
+        app:card_backGradientStart="#2D2D2D"
+        app:card_backStrip2Color="#303030"
+        app:card_backStripColor="@color/black"
+        app:card_cardExpiryHeaderColor="#C4C4C4"
+        app:card_cardExpiryHintColor="#4DFFFFFF"
+        app:card_cardExpiryTextColor="@color/white"
+        app:card_cardNameHeaderColor="#C4C4C4"
+        app:card_cardNameHintColor="#4DFFFFFF"
+        app:card_cardNameTextColor="@color/white"
+        app:card_cardNumberHintColor="#656565"
+        app:card_cardNumberTextColor="@color/white"
+        app:card_cvvBackgroundColor="@color/white"
+        app:card_cvvHintColor="#4D000000"
+        app:card_cvvTextColor="#000000"
+        app:card_frontGradientEnd="#313131"
+        app:card_frontGradientStart="#1F1F1F"
+        app:card_isBackSideEditable="true"
+        app:card_isFrontSideEditable="true"
+        app:card_outline_base_color="#EBB46A"
+        app:card_outline_error_color="#EB6A6E"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_height="180dp" />
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/dialog_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        app:layout_constraintBottom_toTopOf="@id/add_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/add_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_card" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_card"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_round_gray3_dash_gap"
+        android:backgroundTint="@null"
+        android:fontFamily="sans-serif-light"
+        android:paddingVertical="10dp"
+        android:text="@string/add_card"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_add_circle_outline"
+        app:iconGravity="textStart"
+        app:iconTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_cards" />
+
+
+    <EditText
+        android:id="@+id/promotion_code"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_round_gray3"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/enter_promotion_code"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/creditCardView"
+        app:layout_constraintStart_toStartOf="@+id/creditCardView"
+        app:layout_constraintTop_toBottomOf="@+id/add_card" />
+
+    <TextView
+        android:id="@+id/label_billing_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/billing_address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/grey_40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promotion_code" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_edit_address"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/ic_edit"
+        android:backgroundTint="?colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/user_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_billing_address" />
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/grey_95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_billing_address"
+        tools:text="@string/profile_name" />
+
+
+    <TextView
+        android:id="@+id/user_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/grey_40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        tools:text="@string/profile_address" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_config_address"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_round_gray3"
+        android:fontFamily="sans-serif-light"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        android:text="@string/config_address"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:backgroundTint="?colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone"
+
+        />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/blue_grey_100"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_continue"
+        app:layout_constraintTop_toTopOf="@id/btn_continue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="@string/total_price"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/grey_60"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:singleLine="true"
+            android:text="@string/product_price"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="@drawable/bg_round_gray3"
+        android:enabled="false"
+        android:fontFamily="sans-serif-light"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        android:text="@string/_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

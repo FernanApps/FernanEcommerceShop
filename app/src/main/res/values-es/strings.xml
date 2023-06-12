@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Headings -->
+
+    <string name="headings_one">20% de descuento\nProductos nuevos</string>
+    <string name="headings_two">Aprovecha\nLas ofertas de compra</string>
+    <string name="headings_three">Todas las ofertas\nA tu alcance</string>
+
+    <!-- Description -->
+
+    <string name="desc_one">Publica tus selfies para hacerte\nmás bella con esta aplicación.</string>
+    <string name="desc_two">Publica tus selfies para hacerte\nmás bella con esta aplicación.</string>
+    <string name="desc_three">Publica tus selfies para hacerte\nmás bella con esta aplicación.</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+    <string name="skip">Omitir</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="create_an_new_account">Crear una nueva cuenta</string>
+    <string name="user_name">Nombre de usuario</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="user_name_example">@string/profile_name</string>
+    <string name="check_agree">Al crear una cuenta, aceptas nuestros términos y condiciones.</string>
+    <string name="start_shopping">Comenzar a comprar</string>
+    <string name="continue_shopping">Continuar comprando</string>
+
+    <string name="successful_desc">Te has registrado correctamente en nuestra aplicación y puedes comenzar a usarla.</string>
+    <string name="welcome">Bienvenido,</string>
+    <string name="login_decs">Inicia sesión o regístrate para continuar usando nuestra aplicación.</string>
+    <string name="login_with_fb">Continuar con Facebook</string>
+    <string name="login_with_google">Continuar con Google</string>
+    <string name="login__title">Inicio de sesión</string>
+    <string name="login__email_hint">Correo electrónico</string>
+    <string name="login__password_hint">Contraseña</string>
+    <string name="login__login_button">Iniciar sesión</string>
+    <string name="login__signup_button">Crear cuenta</string>
+
+    <string name="login__error_user_no_registered">No hay ningún usuario registrado con este correo electrónico</string>
+    <string name="login__error_wrong_password">Contraseña incorrecta</string>
+    <string name="login__error_unknown_error">Ha ocurrido un error inesperado, inténtelo de nuevo más tarde</string>
+    <string name="login__error_enter_email">Ingrese su correo electrónico.</string>
+    <string name="login__error_enter_password">Ingrese su contraseña.</string>
+
+    <string name="signup__header">Crear cuenta</string>
+    <string name="signup__email_hint">Correo electrónico</string>
+    <string name="signup__password_hint">Contraseña</string>
+    <string name="signup__conf_password">Confirmar contraseña</string>
+    <string name="signup__signup_button">Registrarme</string>
+    <string name="signup__signup_successfully">Cuenta creada correctamente</string>
+    <string name="signup__error_password_insecure">Tu contraseña debe tener al menos 6 caracteres</string>
+    <string name="signup__error_passwords_match">Las contraseñas no coinciden</string>
+    <string name="signup__error_email_already_registered">Ya existe una cuenta registrada con este correo electrónico</string>
+    <string name="signup__error_unknown_error">Ha ocurrido un error inesperado, inténtelo de nuevo más tarde</string>
+
+
+    <string name="auth_error__user_not_exist">El usuario no existe</string>
+    <string name="auth_error__invalid_credentials">Correo electrónico o contraseña incorrectos</string>
+    <string name="auth_error__user_collision">El correo electrónico ya está en uso por otra cuenta</string>
+    <string name="auth_error__weak_password">La contraseña es demasiado débil</string>
+    <string name="auth_error__recent_login_required">Es necesario iniciar sesión nuevamente para realizar esta acción</string>
+    <string name="auth_error__action_code">Código de acción no válido</string>
+    <string name="need_terms_conds">Debe aceptar los Términos y Condiciones</string>
+
+    <string name="navigation_page_title_home">Inicio</string>
+    <string name="navigation_page_title_cart">Carrito</string>
+    <string name="navigation_page_title_notification">Notificación</string>
+    <string name="navigation_page_title_profile">Perfil</string>
+    <string name="navigation_page_title_categories">Categorías</string>
+    <string name="navigation_page_title_settings">Configuración</string>
+    <string name="navigation_page_title_favorites">Favoritos</string>
+    <string name="navigation_page_title_personal_details">Detalles personales</string>
+    <string name="navigation_page_title_orders">Mis pedidos</string>
+    <string name="navigation_page_title_orders_items">Pedidos: Productos</string>
+    <string name="navigation_page_title_products">Productos</string>
+    <string name="navigation_page_title_payment">Pago</string>
+
+
+    <string name="menu_user">Usuario</string>
+    <string name="menu_filtered">Filtrado</string>
+
+    <string name="welcome_desc">Nuestra aplicación Fernan Shop</string>
+    <string name="search">Buscar …</string>
+    <string name="offer_50">50% de descuento</string>
+    <string name="offer_50_desc">En todo</string>
+    <string name="offer_code">Con el código: fx2023</string>
+    <string name="offer_get_now">¡Agarra ahora!</string>
+    <string name="categorie_size_product">208 Productos</string>
+    <string name="categorie_title">Novedades</string>
+    <string name="new_arrivals">Novedades</string>
+    <string name="view_all">Ver todo</string>
+    <string name="product_title">The Marc Jacobs, The Marc Jacobs</string>
+    <string name="product_subtitle">Bolso de viaje, Obtén un poco de elevación con estas sandalias Sam Edelman con tiras fruncidas y cordones de cuero</string>
+    <string name="product_price">$195.00</string>
+    <string name="menu_cart">Tu carrito</string>
+    <string name="product_review">(320 Reseñas)</string>
+    <string name="product_size">Tamaño</string>
+    <string name="product_size_example">XXL</string>
+    <string name="product_description">Descripción</string>
+    <string name="product_description_text">Obtén un poco de elevación con estas sandalias Sam Edelman con tiras fruncidas y cordones de cuero, mientras que una suela trenzada de yute hace una declaración fresca para el verano.</string>
+    <string name="product_price_title">Precio total</string>
+    <string name="product_price_value">$192.00</string>
+
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="added_product_to_cart">Producto agregado</string>
+    <string name="my_cart">Mi carrito</string>
+    <string name="you_dont_have_any_product">"No tienes ningún producto "</string>
+    <string name="you_dont_have_any_order">"No tienes ningún pedido "</string>
+    <string name="you_dont_have_any_notification">"No tienes ninguna notificación "</string>
+
+    <string name="profile_personal_details">Detalles personales</string>
+    <string name="profile_personal_my_order">Mis pedidos</string>
+    <string name="profile_personal_my_favourites">Mis favoritos</string>
+    <string name="profile_personal_shipping_address">Dirección de envío</string>
+    <string name="profile_personal_my_card">Mi tarjeta</string>
+    <string name="profile_personal_settings">Configuración</string>
+
+    <string name="profile_personal_contact_support">Contactar con soporte</string>
+    <string name="profile_personal_faqs">Preguntas frecuentes</string>
+    <string name="profile_personal_privacy_policy">Política de privacidad</string>
+
+    <string name="name">Nombre</string>
+    <string name="age">Edad</string>
+    <string name="phone">Teléfono</string>
+
+    <string name="city">Ciudad</string>
+    <string name="country">País</string>
+    <string name="line1">Línea 1</string>
+    <string name="line2">Línea 2</string>
+    <string name="postal_code">Código postal</string>
+    <string name="state">Estado</string>
+
+    <string name="profile_age">26</string>
+    <string name="profile_phone">987654321</string>
+    <string name="profile_address_city">San Francisco</string>
+    <string name="profile_address_country">EE. UU.</string>
+    <string name="profile_address_line1">123 Market St</string>
+    <string name="profile_address_line2">#345</string>
+    <string name="profile_address_postal_code">94107</string>
+    <string name="profile_address_state">California</string>
+
+    <string name="settings_language">Idioma</string>
+    <string name="settings_notifications">Notificaciones</string>
+    <string name="settings_dark_mode">Modo oscuro</string>
+    <string name="settings_help_center">Centro de ayuda</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="loading">Cargando...</string>
+
+    <string name="one_moment_verifying">Un momento,\nverificando…</string>
+    <string name="one_moment_coming_out">Un momento,\nsaliendo…</string>
+    <string name="one_moment_logging_in">Un momento,\niniciando sesión…</string>
+    <string name="one_moment_sign_up">Un momento,\nregístrate…</string>
+    <string name="one_moment_payment_initiated">Un momento,\nLa transacción ha sido iniciada…</string>
+    <string name="one_moment_payment_progress">Transacción en progreso…</string>
+    <string name="one_moment_payment_successfully">La transacción se ha ejecutado correctamente</string>
+    <string name="one_moment_payment_failure">Error en la transacción</string>
+
+    <string name="one_moment_saving_user">Un momento,\nGuardando usuario…</string>
+    <string name="one_moment_saving_card">Un momento,\nGuardando tarjeta…</string>
+
+    <string name="loading_your_cards">Cargando,\ntus tarjetas…</string>
+    <string name="not_cards">No tienes tarjetas aún, por favor agrega</string>
+
+    <string name="there_was_a_mistake">Hubo un error</string>
+    <string name="saved_successfully">Guardado correctamente</string>
+
+    <string name="one_moment_order_failure">Error al realizar el pedido</string>
+    <string name="one_moment_order_success">¡Pedido realizado con éxito!</string>
+    <string name="one_moment_order_generating">Generando pedido...</string>
+
+    <string name="finish">Finalizar</string>
+
+    <string name="products">Productos</string>
+    <string name="total_item">Total (%s artículos)</string>
+    <string name="proceed_to_checkout">Realizar el pedido</string>
+    <string name="contact_to_buy">Contactar para comprar</string>
+    <string name="_continue">Continuar</string>
+
+    <string name="payment">Pago</string>
+    <string name="enter_promotion_code">Ingresa el código de promoción</string>
+    <string name="billing_address">Dirección de facturación</string>
+    <string name="config_address">Configurar dirección</string>
+    <string name="profile_address">CA, San Francisco, EE. UU.\n123 Market St, #345\n+519876543231</string>
+
+    <string name="save">Guardar</string>
+    <string name="ongoing">En curso</string>
+    <string name="completed">Completado</string>
+    <string name="format_quantity">Cantidad: %s</string>
+    <string name="format_size">Tamaño: %s</string>
+    <string name="amount">Importe:</string>
+    <string name="order_date">Fecha del pedido:</string>
+    <string name="delivery">Entrega:</string>
+    <string name="order_no">Número de pedido:</string>
+    <string name="send">Enviar</string>
+    <string name="notification_title">Kristine Jones Es un hecho bien establecido\nque un lector se distraerá por el\ncontenido legible de una página.</string>
+    <string name="notification_time">Hace 2 horas</string>
+    <string name="add_card">Agregar tarjeta</string>
+
+    <string name="card_number">Número de tarjeta</string>
+    <string name="card_details">Detalles de la tarjeta</string>
+    <string name="card_exp_date">Fecha de vencimiento</string>
+    <string name="card_cvc">CVV</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="total_price">Precio total</string>
+
+</resources>

@@ -1,4 +1,4 @@
-name: Android CI
+name: Build Fernan Shop App
 
 on:
   push:

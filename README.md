@@ -26,7 +26,7 @@ Go to the [Releases](https://github.com/FernanApps/FernanEcommerceShop/releases)
 
 ## Preview
 
-<img src="/previews/preview.gif"/>
+<img src="https://raw.githubusercontent.com/FernanApps/FernanEcommerceShop/master/previews/preview.gif"/>
 
 <!---
 <img src="/previews/preview.gif" width="320"/>

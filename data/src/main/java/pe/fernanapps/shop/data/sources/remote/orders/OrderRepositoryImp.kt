@@ -23,7 +23,7 @@ class OrderRepositoryImp @Inject constructor(
 
             val orderDetailsList = orderService.getAllOrdersDetails(userId)
             if (orderDetailsList.isNotEmpty()) {
-                orderDetailsList.forEach { orderDetails ->
+                for (orderDetails in orderDetailsList) {
                     val ordersItemList = orderService.getAllOrdersItem(orderDetails.id)
                     if (ordersItemList.isNotEmpty()) {
                         finalOrderDetailsList.add(orderDetails.copy(ordersItems = ordersItemList))

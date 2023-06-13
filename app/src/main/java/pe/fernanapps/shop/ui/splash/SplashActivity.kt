@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import dagger.hilt.android.AndroidEntryPoint
 import pe.fernanapps.shop.R
@@ -27,16 +28,20 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding
 
     private val viewModel by viewModels<SplashViewModel>()
 
-    fun showSignUpOrLogin(){
-        bin.splash02.root.visibility = View.VISIBLE
-        bin.splash01.root.visibility = View.GONE
+    fun showSignUpOrLogin(show: Boolean){
+        bin.splash02.root.isVisible = show
+        bin.splash01.root.isVisible = !show
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (intent.extras?.getBoolean(INTENT_FROM_INSIDE_APP) != null) {
-            showSignUpOrLogin()
+        showSignUpOrLogin(false)
+        println("Antes")
+        if (intent.extras?.getBoolean(INTENT_FROM_INSIDE_APP) == true) {
+            println("Extras ${intent.extras.toString()}")
+            showSignUpOrLogin(true)
         } else {
+            println("No Extras")
             viewModel.initSplashScreen()
 
 
@@ -50,8 +55,9 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding
 
     override fun initObserves() {
         viewModel.loading.observe(this, Observer {
+            println("viewModel Loading $it")
             if (!it) {
-                showSignUpOrLogin()
+                showSignUpOrLogin(true)
                 viewModel.checkSessionAvailability()
             }
         })

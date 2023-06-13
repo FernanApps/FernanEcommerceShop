@@ -88,6 +88,7 @@ class OrdersFragment : BaseFragmentHideTopAndBottom<FragmentOrdersBinding>(Fragm
 
     override fun initViews() {
         with(bin) {
+            base.title.text = getString(R.string.profile_personal_my_order)
             base.recycler.adapter = adapter
         }
     }

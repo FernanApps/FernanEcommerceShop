@@ -4,7 +4,7 @@
 <p align="center">
 <a href="https://github.com/FernanApps/FernanEcommerceShop" title="Go"><img src="https://img.shields.io/static/v1?label=FernanApps&message=EcommerceShop&color=blue&logo=github" alt="Github - FerMemoryGame"></a>
 <br>
-<a href="https://github.com/FernanApps/FerMemoryGame/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/FernanApps/FerMemoryGame.svg?include_prereleases=&sort=semver&color=red"/></a>
+<a href="https://github.com/FernanApps/FernanEcommerceShop/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/FernanApps/FerMemoryGame.svg?include_prereleases=&sort=semver&color=red"/></a>
   <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a> 
  
 </p

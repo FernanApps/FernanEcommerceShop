@@ -68,8 +68,11 @@ This architecture allows for a clear separation of responsibilities, makes it ea
 - **Presentation** is responsible for the user interface and user interaction. Here are the UI components and presentation logic. <br>  <br>  
 ![Imagen](https://raw.githubusercontent.com/FernanApps/FernanEcommerceShop/master/previews/structure_app.png) <br>
 <br>  
+
+
 -  **Data**   is responsible for data access and persistence. Here the repositories defined in the domain layer are implemented and frameworks and libraries are used to interact with data sources. <br> <br>  
 ![Imagen](https://raw.githubusercontent.com/FernanApps/FernanEcommerceShop/master/previews/structure_data.png) <br>
+
 
 - **Domain**  is the core of the architecture and contains the main business logic of the application. Here the application-specific use cases and business rules are defined. <br><br>
 ![Imagen](https://raw.githubusercontent.com/FernanApps/FernanEcommerceShop/master/previews/structure_domain.png)

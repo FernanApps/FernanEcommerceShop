@@ -17,14 +17,14 @@ std::string STRIPE_PUBLISHABLE_KEY = "pk_test_51NF3BNK3fu4EtKg5VeROdo0KAnWc7d2C2
 
 std::string APPWRITE_ENDPOINT_BASE = "https://8080-appwrite-integrationfor-b87w21ace9c.ws-us99.gitpod.io";
 
-std::string APPWRITE_ENDPOINT = APPWRITE_ENDPOINT_BASE +"/v1";
-std::string APPWRITE_PROYECT = "app_write_hackaton";
-std::string APPWRITE_DATABASE_ID = "fernan_shop_db";
+//std::string APPWRITE_ENDPOINT = APPWRITE_ENDPOINT_BASE +"/v1";
+//std::string APPWRITE_PROYECT = "app_write_hackaton";
+//std::string APPWRITE_DATABASE_ID = "fernan_shop_db";
 
 
-//std::string APPWRITE_ENDPOINT = "https://cloud.appwrite.io/v1";
-//std::string APPWRITE_PROYECT = "646f7da48de53f64a18a";
-//std::string APPWRITE_DATABASE_ID = "64739b907d3c97bfbc76";
+std::string APPWRITE_ENDPOINT = "https://cloud.appwrite.io/v1";
+std::string APPWRITE_PROYECT = "646f7da48de53f64a18a";
+std::string APPWRITE_DATABASE_ID = "64739b907d3c97bfbc76";
 
 std::string APPWRITE_CATEGORIE_ID = "categories";
 std::string APPWRITE_PRODUCTS_ID = "products2";

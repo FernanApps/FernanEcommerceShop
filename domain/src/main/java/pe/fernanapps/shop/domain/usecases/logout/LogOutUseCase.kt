@@ -9,6 +9,6 @@ class LogOutUseCase @Inject constructor(
     private val loginRepository: LoginRepository
 ) {
 
-    suspend operator fun invoke(): Flow<DataState<Boolean>> =
+    operator fun invoke(): Flow<DataState<Boolean>> =
         loginRepository.logOut()
 }
